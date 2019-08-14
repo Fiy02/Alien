@@ -18,7 +18,7 @@ class Scoreboard():
         self.prep_ships()
 
     def prep_score(self):
-        """将得分装换为渲染的图像"""
+        """将得分转换为渲染的图像"""
         # score_str = str(self.stats.score)
         rounded_score = int(round(self.stats.score,-1))
         score_str = "{:,}".format(rounded_score)
