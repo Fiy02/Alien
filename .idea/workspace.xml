@@ -5,10 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/game_functions.py" line="139" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d65f3851-3375-4dad-9544-5456fdd95118" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
-    </list>
+    <list default="true" id="d65f3851-3375-4dad-9544-5456fdd95118" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scoreboard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="450">
+              <caret line="24" column="92" lean-forward="true" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -203,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.button">
     <configuration name="alien_invasion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="alien" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -226,8 +223,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="button" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="alien" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/button.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.button" />
         <item itemvalue="Python.alien_invasion" />
       </list>
     </recent_temporary>
@@ -253,15 +273,31 @@
       <workItem from="1565572410911" duration="5444000" />
       <workItem from="1565605235443" duration="833000" />
       <workItem from="1565664121872" duration="6267000" />
-      <workItem from="1565748794003" duration="10845000" />
+      <workItem from="1565748794003" duration="11085000" />
     </task>
+    <task id="LOCAL-00001" summary="edit">
+      <created>1565777715317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565777715317</updated>
+    </task>
+    <task id="LOCAL-00002" summary="edit">
+      <created>1565777741135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565777741135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88836000" />
+    <option name="totallyTimeSpent" value="89076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.21104388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -311,6 +347,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/ship.bmp" />
@@ -401,8 +441,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scoreboard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="450">
+          <caret line="24" column="92" lean-forward="true" selection-start-line="24" selection-start-column="92" selection-end-line="24" selection-end-column="92" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
