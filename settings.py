@@ -17,14 +17,14 @@ class Settings():
         # 子弹的设置；
         # self.bullet_speed_factor = 8.5
         # 自定义子弹的大小；
-        self.bullet_width = 200
-        self.bullet_height = 6
-        self.bullet_color = 60,60,60
+        # self.bullet_width = 6
+        # self.bullet_height = 6
+        # self.bullet_color = 60,60,60
         self.bullets_allowed = 10
 
         # 外星人移动；
         # self.alien_speed_factor = 5
-        self.fleet_drop_speed = 100
+        self.fleet_drop_speed = 5
         # 加快游戏节奏的速度；
         self.speedup_scale = 1.1
         # 外星人点数的提高速度；
@@ -36,8 +36,7 @@ class Settings():
         """初始化随游戏进行而变化的设置"""
         self.ship_speed_factor = 1.1
         self.bullet_speed_factor = 1.1
-
-        self.alien_speed_factor = 1
+        self.alien_speed_factor = 1.1
         # fleet_direction为1表示右移，为-1表示左移；
         self.fleet_direction = 1
         # 记分；

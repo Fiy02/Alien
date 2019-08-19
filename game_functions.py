@@ -25,8 +25,8 @@ def check_keyup_events(event,ship):
     if event.key == pygame.K_LEFT:
         ship.moving_left = False
 
-# 监视键盘和鼠标事件；
 def check_events(ai_settings,screen,stats,sb,play_button,ship,aliens,bullets):
+    """监视键盘和鼠标事件"""
     for event in pygame.event.get():
         # 点击关闭按钮时关闭窗口；
         if event.type == pygame.QUIT:
@@ -42,6 +42,7 @@ def check_events(ai_settings,screen,stats,sb,play_button,ship,aliens,bullets):
             check_play_button(ai_settings,screen,stats,sb,play_button,ship,aliens,bullets,mouse_x,mouse_y)
 
 def check_play_button(ai_settings,screen,stats,sb,play_button,ship,aliens,bullets,mouse_x,mouse_y):
+    """点击PLAY事件"""
     button_clicked = play_button.rect.collidepoint(mouse_x,mouse_y)
     if button_clicked and not stats.game_active:
         ai_settings.initialize_dynamic_settings()
@@ -65,8 +66,8 @@ def fire_bullet(ai_settings,screen,ship,bullets):
         new_bullet = Bullet(ai_settings,screen,ship)
         bullets.add(new_bullet)
 
-# 绘制事件；
 def update_screen(ai_settings,screen,stats,sb,play_button,ship,aliens,bullets):
+    """绘制事件"""
     # 每次循环时重绘屏幕；
     screen.fill(ai_settings.bg_color)
     # 自定义背景图
@@ -86,7 +87,7 @@ def update_screen(ai_settings,screen,stats,sb,play_button,ship,aliens,bullets):
     pygame.display.flip()
 
 def update_bullets(ai_settings,screen,stats,sb,ship,aliens,bullets):
-    # 删除超过窗口的子弹；
+    """删除超过窗口的子弹"""
     bullets.update()
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
@@ -101,7 +102,7 @@ def get_number_aliens_x(ai_settings,alien_width):
 
 def get_number_rows(ai_settings,ship_height,alien_height):
     """计算屏幕可容纳多少行"""
-    available_space_y = (ai_settings.screen_height - (12 * alien_height) - ship_height)
+    available_space_y = (ai_settings.screen_height - (3 * alien_height) - ship_height)
     number_rows = int(available_space_y / (2 * alien_height))
     return number_rows
 
@@ -178,7 +179,7 @@ def ship_hit(ai_settings,screen,stats,sb,ship,aliens,bullets):
         sb.prep_ships()
         aliens.empty()
         bullets.empty()
-        ship.image = pygame.image.load('images/s.bmp')
+        ship.image = pygame.image.load('images/ship.bmp')
         creat_fleet(ai_settings,screen,ship,aliens)
         ship.center_ship()
         sleep(0.5)
