@@ -20,6 +20,7 @@ class Scoreboard():
     def prep_score(self):
         """将得分转换为渲染的图像"""
         # score_str = str(self.stats.score)
+        # round第二个实参指定小数精确到小数点后几位，使用负数将圆整到最近的10,100..等整倍数；
         rounded_score = int(round(self.stats.score,-1))
         score_str = "{:,}".format(rounded_score)
         self.score_image = self.font.render(score_str,True,self.text_color,self.ai_settings.bg_color)
@@ -33,6 +34,7 @@ class Scoreboard():
         self.screen.blit(self.score_image,self.score_rect)
         self.screen.blit(self.high_score_image,self.high_score_rect)
         self.screen.blit(self.level_image,self.level_rect)
+        # 显示飞船数量的图像；
         self.ships.draw(self.screen)
 
     def prep_high_score(self):

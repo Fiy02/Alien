@@ -7,19 +7,19 @@ from ship import Ship
 from time import sleep
 from button import Button
 
-# 响应按键；
 def check_keydown_events(event,ai_settings,screen,ship,bullets):
+    """响应按键"""
     if event.key == pygame.K_RIGHT:
         ship.moving_right = True
-    elif event.key == pygame.K_q:
-        sys.exit()
-    elif event.key == pygame.K_SPACE:
-        fire_bullet(ai_settings,screen,ship,bullets)
     elif event.key == pygame.K_LEFT:
         ship.moving_left = True
+    elif event.key == pygame.K_SPACE:
+        fire_bullet(ai_settings,screen,ship,bullets)
+    elif event.key == pygame.K_q:
+        sys.exit()
 
-# 响应松开；
 def check_keyup_events(event,ship):
+    """响应松开"""
     if event.key == pygame.K_RIGHT:
         ship.moving_right = False
     if event.key == pygame.K_LEFT:
@@ -176,10 +176,8 @@ def ship_hit(ai_settings,screen,stats,sb,ship,aliens,bullets):
         stats.ships_left -= 1
         # 更新记分牌；
         sb.prep_ships()
-        print(2)
         aliens.empty()
         bullets.empty()
-        print(3)
         ship.image = pygame.image.load('images/s.bmp')
         creat_fleet(ai_settings,screen,ship,aliens)
         ship.center_ship()

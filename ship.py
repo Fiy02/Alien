@@ -7,7 +7,7 @@ class Ship(Sprite):
         super(Ship, self).__init__()
         self.screen = screen
         self.ai_settings = ai_settings
-        self.image = pygame.image.load('images/s.bmp')   # 加载飞船图片;
+        self.image = pygame.image.load('images/s.bmp')      # 加载飞船图片;
         self.rect = self.image.get_rect()                   # 获取图片矩形；
         self.screen_rect = screen.get_rect()                # 获取窗口矩形；
         # 使图片的矩形位置等同于窗口的矩形位置，底部居中；
